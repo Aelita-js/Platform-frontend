@@ -1,0 +1,1 @@
+export const AUTH_API = 'https://jetteam-backend.herokuapp.com/api'

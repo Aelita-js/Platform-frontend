@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-header {
+    background-color: #f1f1f1;
+    border-top-right-radius: 40px;
+}
+
+.intro-menu {
+    width: 50%;
+    height: 80px;
+    border-bottom-right-radius: 45px;
+    background-color: #181818;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    ul {
+        display: flex;
+        margin-right: 70px;
+        li {
+            margin-left: 40px;
+            list-style: none;
+            cursor: pointer;
+        }
+        li:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.intro-info {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f1f1f1;
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.info-team {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 130px;
+    .logo-img {
+        width: 260px;
+        padding-bottom: 36px;
+    }
+    .der-img {
+        width: 80px;
+        padding-bottom: 36px;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.info-img {
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        width: 450px;
+    }
+}
+
+.info-head {
+    width: 490px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        font-size: 60px;
+        font-family: 'Times New Roman';
+        padding-bottom: 36px;
+    }
+    .der-img {
+        width: 80px;
+        padding-bottom: 36px;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
