@@ -28,17 +28,67 @@ const AuthContextProvider = ({ children }) => {
     //     })
     // }
 
+    // const registerUser = async(email, link) => {
+    //     const response= await axios.post(`${AUTH_API}/registration`, email, link)
+    //    }
+
     const registerUser = async (newUser, history) => {
-        await axios.post(`${AUTH_API}/registration`, newUser)
-        // getUsersData()
-        history.push('/auth')
+        // e.preventDefault();
+        // const newUser = {
+        //     email: e.target, 
+        //     password: e.target
+        // }
+        console.log(newUser);
+        try {
+            await axios.post(`${AUTH_API}/registration`, newUser);  
+            history.push('/auth');
+            // console.log();
+        } catch (e) {
+            alert(e);
+            console.log(e);
+        }
     }
 
-    const authUser = async (id, history) => {
-        const { data } = await axios(`${AUTH_API}/login`)
-        localStorage.setItem("user", JSON.stringify(data.id))
-        history.push('/')
+    // axios.post(`${AUTH_API}/registration`, {
+    //     email: email,
+    //     password: password
+    // })
+    // .then(function (response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+
+    const loginUser = async (user, history) => {
+        // e.preventDefault();
+        // const user = {
+        //     email: e.target,
+        //     password: e.target
+        // }
+        console.log(user);
+        try {
+            await axios.post(`${AUTH_API}/login`, user);
+            history.push('/');
+        } catch (e) {
+            alert(e);
+            console.log(e);
+        }
     }
+
+    // const loginUser = async (user, history) => {
+    //     try {
+    //         const { data } = await axios.post(`${AUTH_API}/login`, user);
+    //         // localStorage.setItem("email", data.token);
+    //         // localStorage.setItem("password", data.storeToken);
+    //         history.push('/');
+    //     } catch (e) {
+    //         alert(e);
+    //     }
+
+    // }
+
+    // * ==================================================================================================================
 
     // const getUserData = async (id) => {
     //     const { data } = await axios(`${AUTH_API}/users/${id}`)
@@ -79,7 +129,7 @@ const AuthContextProvider = ({ children }) => {
             user: state.user,
             // getUsersData,
             // getUserData,
-            authUser,
+            loginUser,
             registerUser
         }}>
             {children}

@@ -14,11 +14,11 @@ import '../../../styles/LoginStyles/LoginStyles.css';
 //       .then(data => data.json())
 //    }
 
-const LogIn = (props) => {
+const LogIn = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const history = useHistory();
-    const {authUser} = useContext(authContext);
+    const {loginUser} = useContext(authContext);
 
     // const handleSubmit = async e => {
     //     e.preventDefault();
@@ -29,8 +29,9 @@ const LogIn = (props) => {
     //     setToken(token);
     //   }
 
-    function handleClick() {
 
+    const handleClick = () => {
+        loginUser({"email": email, "password": password}, history);
     }
 
     return (
@@ -39,7 +40,7 @@ const LogIn = (props) => {
             <h3>Войти в систему</h3>
             <input type="email" placeholder='Электронная почта' onChange={e => setEmail(e.target.value)} />
             <input type="password" placeholder='Пароль' onChange={e => setPassword(e.target.value)} />
-            <button onClick={(e) => authUser(e, history)}>Войти</button>
+            <button onClick={handleClick}>Войти</button>
         </div>
         </div>
     );

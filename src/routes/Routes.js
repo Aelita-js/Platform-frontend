@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { Context } from '..';
-import SingUp from '../components/Authentication/SingUp/SingUp'
+import SingUp from '../components/Authentication/SingUp/SingUp';
 import AuthContextProvider from '../contexts/AuthContextProvider';
 import Auth from '../pages/Auth';
 import ConfirmPage from '../pages/ConfirmPage';
 import Course from '../pages/Course';
 import Main from '../pages/Main';
 const Routes = () => {
-    const {user} = useContext(Context);
+    // const {user} = useContext(Context);
 
     return (
         <AuthContextProvider>
