@@ -30,7 +30,8 @@ const LogIn = () => {
     //   }
 
 
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.preventDefault();
         loginUser({"email": email, "password": password}, history);
     }
 

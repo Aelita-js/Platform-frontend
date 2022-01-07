@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useReducer } from 'react';
+import { useState } from 'react/cjs/react.development';
 import { AUTH_API } from "../helpers/Constants";
 
 export const authContext = React.createContext()
@@ -18,8 +19,8 @@ const reducer = (state = INIT_STATE, action) => {
 }
 
 const AuthContextProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(reducer, INIT_STATE)
-
+    const [state, dispatch] = useReducer(reducer, INIT_STATE);
+    const [auth, setAuth] = useState(false);
     // async function getUsersData(newUser) {
     //     const { data } = await axios(`${AUTH_API}/users`)
     //     dispatch({
@@ -40,9 +41,10 @@ const AuthContextProvider = ({ children }) => {
         // }
         console.log(newUser);
         try {
-            await axios.post(`${AUTH_API}/registration`, newUser);  
+            const res = await axios.post(`${AUTH_API}/registration`, newUser);
+            saveTokens(res.data.accessToken, res.data.refreshToken);
+            setAuth(true);
             history.push('/auth');
-            // console.log();
         } catch (e) {
             alert(e);
             console.log(e);
@@ -68,8 +70,10 @@ const AuthContextProvider = ({ children }) => {
         // }
         console.log(user);
         try {
-            await axios.post(`${AUTH_API}/login`, user);
-            history.push('/');
+            const res = await axios.post(`${AUTH_API}/login`, user);
+            saveTokens(res.data.accessToken, res.data.refreshToken)
+            console.log(res);
+            history.push('/home');
         } catch (e) {
             alert(e);
             console.log(e);
@@ -118,8 +122,17 @@ const AuthContextProvider = ({ children }) => {
     //     }
     // }
 
-    const storeToken = (token) => {
-        localStorage.setItem('jwt-token', token);
+    // const refreshTokenStore = (token) => {
+    //     debugger;
+    //     localStorage.setItem('jwt-refresh', JSON.stringify(token));
+    // }
+    // const accessTokenStore = (token) => {
+    //     localStorage.setItem('jwt-access', JSON.stringify(token));
+    // }
+
+    const saveTokens = (accessToken, refreshToken) => {
+        localStorage.setItem('jwt-access', JSON.stringify(accessToken))
+        localStorage.setItem('jwt-refresh', JSON.stringify(refreshToken))
     }
 
     
@@ -130,7 +143,8 @@ const AuthContextProvider = ({ children }) => {
             // getUsersData,
             // getUserData,
             loginUser,
-            registerUser
+            registerUser,
+            auth
         }}>
             {children}
         </authContext.Provider>
