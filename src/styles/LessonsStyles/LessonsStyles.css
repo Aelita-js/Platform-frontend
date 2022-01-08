@@ -70,4 +70,31 @@
   margin-left: auto;
   margin-right: 0;
 }
+
+.logout-button {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  width: 270px;
+  height: 60px;
+  border: none;
+  background-color: #181818;
+  color: #f0f0f0;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+button:hover {
+  opacity: 80%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
 /*# sourceMappingURL=LessonsStyles.css.map */

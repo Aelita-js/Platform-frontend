@@ -1,5 +1,4 @@
 import React from 'react';
-import { useContext } from 'react/cjs/react.development';
 import About from '../components/About/About';
 import Intro from '../components/Intro/Intro';
 import Lessons from '../components/Lessons/Lessons';

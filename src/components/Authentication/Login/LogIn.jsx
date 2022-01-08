@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import { authContext } from '../../../contexts/AuthContextProvider';
 import '../../../styles/LoginStyles/LoginStyles.css';
@@ -18,7 +19,10 @@ const LogIn = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const history = useHistory();
+    const location = useLocation();
     const {loginUser} = useContext(authContext);
+
+    const fromPage = location.state?.from?.pathname || '/';
 
     // const handleSubmit = async e => {
     //     e.preventDefault();
@@ -28,7 +32,6 @@ const LogIn = () => {
     //     });
     //     setToken(token);
     //   }
-
 
     const handleClick = (e) => {
         e.preventDefault();

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import delimeter from '../../assets/delimiter.png';
+import { authContext } from '../../contexts/AuthContextProvider';
 import '../../styles/LessonsStyles/LessonsStyles.css';
 
 const Lessons = () => {
+    // const { logoutUser } = useContext(authContext);
+
+    // const handleClick = () => {
+    //     logoutUser()
+    // }
+
     return (
         <div className='lesson' id='lesson'>
             <div className='lesson-topic'>
@@ -66,7 +73,9 @@ const Lessons = () => {
                 </div>
             </div>
 
-            
+            <div className='logout-button'>
+                <button>ВЫЙТИ ИЗ СИСТЕМЫ</button>
+            </div>
         </div>
     );
 };

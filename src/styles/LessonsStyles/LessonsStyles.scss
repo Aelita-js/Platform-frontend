@@ -72,3 +72,23 @@
         margin-right: 0;
     }
 }
+
+.logout-button {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 270px;
+    height: 60px;
+    border: none;
+    background-color: #181818;
+    color: #f0f0f0;
+    font-size: 18px;
+    border-radius: 7px;
+    }
+    button:hover {
+    opacity: 80%;
+    transition: .2s;
+}

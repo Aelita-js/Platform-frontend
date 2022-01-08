@@ -43,25 +43,24 @@ const AuthContextProvider = ({ children }) => {
         try {
             const res = await axios.post(`${AUTH_API}/registration`, newUser);
             saveTokens(res.data.accessToken, res.data.refreshToken);
-            setAuth(true);
             history.push('/auth');
         } catch (e) {
             alert(e);
             console.log(e);
         }
     }
-
+    
     // axios.post(`${AUTH_API}/registration`, {
-    //     email: email,
-    //     password: password
+        //     email: email,
+        //     password: password
     // })
     // .then(function (response) {
-    //     console.log(response);
-    //   })
+        //     console.log(response);
+        //   })
     //   .catch(function (error) {
     //     console.log(error);
     //   });
-
+    
     const loginUser = async (user, history) => {
         // e.preventDefault();
         // const user = {
@@ -73,6 +72,7 @@ const AuthContextProvider = ({ children }) => {
             const res = await axios.post(`${AUTH_API}/login`, user);
             saveTokens(res.data.accessToken, res.data.refreshToken)
             console.log(res);
+            setAuth(true);
             history.push('/home');
         } catch (e) {
             alert(e);
@@ -80,19 +80,39 @@ const AuthContextProvider = ({ children }) => {
         }
     }
 
+
     // const loginUser = async (user, history) => {
-    //     try {
+        //     try {
     //         const { data } = await axios.post(`${AUTH_API}/login`, user);
     //         // localStorage.setItem("email", data.token);
     //         // localStorage.setItem("password", data.storeToken);
     //         history.push('/');
     //     } catch (e) {
-    //         alert(e);
+        //         alert(e);
     //     }
-
+    
     // }
 
-    // * ==================================================================================================================
+     const logoutUser = async (token, history) => {
+        try {
+            await axios.post(`${AUTH_API}/logout`);
+            localStorage.clear('jwt-refresh', token);
+            setAuth(false);
+            history.push('/');
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+
+    const checkLogin = () => {
+        if(auth === true) {
+            return true;
+        }
+    }
+    
+
+    // * ====================props.checkLogin==============================================================================================
 
     // const getUserData = async (id) => {
     //     const { data } = await axios(`${AUTH_API}/users/${id}`)
@@ -144,7 +164,7 @@ const AuthContextProvider = ({ children }) => {
             // getUserData,
             loginUser,
             registerUser,
-            auth
+            checkLogin
         }}>
             {children}
         </authContext.Provider>
