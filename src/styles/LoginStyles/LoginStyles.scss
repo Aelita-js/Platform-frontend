@@ -66,3 +66,29 @@
         transition: .2s;
     }
 }
+
+
+@media screen and (max-width: 800px) {
+    .login-cont {
+        width: 580px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .login-cont {
+        width: 430px;
+        height: 320px;
+        h3 {
+            font-size: 20px;
+        }
+        input {
+            width: 350px;
+            height: 44px;
+        }
+        button {
+            width: 130px;
+            height: 44px;
+        }
+    }
+}

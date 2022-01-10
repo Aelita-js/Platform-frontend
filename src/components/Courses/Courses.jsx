@@ -26,7 +26,7 @@ const Courses = () => {
                     </div>
                 </div>
                 <div className='course-video'>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="810" height="443" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -37,8 +37,8 @@ const Courses = () => {
             </div>
 
             <div className='cor left' id='2'>
-                <div className='lesson-video'>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className='course-video'>
+                    <iframe width="810" height="443" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='course-context'>
                     <div className='context-topik'>
@@ -74,7 +74,7 @@ const Courses = () => {
                     </div>
                 </div>
                 <div className='course-video'>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="810" height="443" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -85,8 +85,8 @@ const Courses = () => {
             </div>
 
             <div className='cor left' id='4'>
-                <div className='lesson-video'>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className='course-video'>
+                    <iframe width="810" height="443" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='course-context'>
                     <div className='context-topik'>
@@ -122,7 +122,7 @@ const Courses = () => {
                     </div>
                 </div>
                 <div className='course-video'>
-                    <iframe width="840" height="473" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="810" height="443" src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

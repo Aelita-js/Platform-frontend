@@ -81,3 +81,158 @@
         margin-right: 0;
     }
 }
+
+
+@media screen and (max-width: 1600px) {
+    .cor {
+        width: 86%;
+    }
+    .course-context {
+        width: 470px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cor {
+        width: 90%;
+    }
+    .course-context {
+        width: 412px;
+    }
+    .left {
+        .course-context {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .context-topik {
+        h2 {
+            font-size: 180px;
+        }
+        h3 {
+            font-size: 60px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cor {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .course-context {
+        width: 800px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .context-topik {
+        h2 {
+            font-size: 150px;
+        }
+        h3 {
+            font-size: 50px;
+        }
+    }
+    .context-der {
+        display: none;
+    }
+    .contex-text {
+        width: 700px;
+        p {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+    }
+    .context-der {
+        img {
+            width: 70px;
+            padding-bottom: 15px;
+            margin-top: 30px;
+            margin: 0;
+        }
+    }
+
+    .left {
+        .course-context {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .course-topic {
+        h2 {
+            font-size: 50px;
+        }
+    }
+    .cor {
+        width: 90%;
+    }
+    .course-context {
+        width: 720px;
+    }
+    .context-topik {
+        h2 {
+            font-size: 120px;
+        }
+        h3 {
+            font-size: 44px;
+        }
+    }
+    .contex-text {
+        width: 500px;
+        p {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+    }
+    .course-video {
+        iframe {
+            width: 650px;
+            height: 443px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .course-context {
+        width: 380px;
+    }
+    .context-topik {
+        h2 {
+            font-size: 90px;
+        }
+        h3 {
+            font-size: 28px;
+        }
+    }
+    .contex-text {
+        width: 200px;
+        display: flex;
+        p {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    }
+    .course-video {
+        iframe {
+            width: 350px;
+            height: 243px;
+        }
+    }
+    .context-der {
+        img {
+            width: 3px;
+        }
+    }
+}

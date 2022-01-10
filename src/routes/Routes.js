@@ -14,23 +14,24 @@ const Routes = () => {
 
 
     return (
-        <AuthContextProvider>
-            <BrowserRouter>
-                <Switch>
-                    {/* <Route exact path="/" component={Auth} /> */}
-                    <Route exact path="/auth" component={Auth} />
-                    <Route exact path="/" component={
-                        <RequireAuth>
-                            <Main />
-                        </RequireAuth>
-                    } />
-                    <Route exact path="/confirm" component={ConfirmPage} />
-                    <Route exact path="/course" component={Course} />
-                    <Route exact path="/admin" component={SingUp} />
-                    <Redirect to={"/"} />
-                </Switch>
-            </BrowserRouter>
-        </AuthContextProvider>
+        // <AuthContextProvider>
+        //     <BrowserRouter>
+        //         <Switch>
+        //             {/* <Route exact path="/" component={Auth} /> */}
+        //             <Route exact path="/auth" component={Auth} />
+        //             <Route exact path="/" component={
+        //                 <RequireAuth>
+        //                     {/* <Main /> */}
+        //                     <Course/>
+        //                 </RequireAuth>
+        //             } />
+        //             <Route exact path="/confirm" component={ConfirmPage} />
+        //             {/* <Route exact path="/course" component={Course} /> */}
+        //             <Route exact path="/admin" component={SingUp} />
+        //             <Redirect to={"/"} />
+        //         </Switch>
+        //     </BrowserRouter>
+        // </AuthContextProvider>
 
         // <AuthContextProvider>
         //     <BrowserRouter>
@@ -48,6 +49,19 @@ const Routes = () => {
         //     </BrowserRouter>
         // </AuthContextProvider>
 
+        <AuthContextProvider>
+            <BrowserRouter>
+                <Switch>
+                    {/* <Route exact path="/" component={Auth} /> */}
+                    <Route exact path="/auth" component={Auth} />
+                    <Route exact path="/admin" component={SingUp} />
+                    <Route exact path="/confirm" component={ConfirmPage} />
+                    <Route exact path="/course" component={Course} />
+                    <Route exact path="/" component={Main} />
+                    <Redirect to={"/"} />
+                </Switch>
+            </BrowserRouter>
+        </AuthContextProvider>
 
     );
 };
