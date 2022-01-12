@@ -58,6 +58,12 @@
     }
 }
 
+.lesson-context {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
 .context-topic {
     margin: 25px;
     display: flex;
@@ -65,19 +71,21 @@
     justify-content: center;
     font-family: 'Ubuntu', sans-serif;
     h2 {
-        margin: 15px;
-        font-size: 70px;
+        margin: 10px;
+        font-size: 120px;
         color: #9d9d9d;
     }
     h3 {
         margin: 15px;
-        font-size: 50px;
+        font-size: 48px;
         text-transform: uppercase;
     }
 }
 
 .context-text {
     font-family: 'Ubuntu', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
     p {
         font-size: 20px;
     }
@@ -85,9 +93,9 @@
 
 .arrow-delimeter {
     width: 100%;
-    margin: 80px 0;
+    margin-bottom: 80px;
     img {
-        width: 180px;
+        width: 150px;
         display: block;
         margin-left: auto;
         margin-right: auto;

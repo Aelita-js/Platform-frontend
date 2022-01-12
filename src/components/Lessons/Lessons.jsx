@@ -14,7 +14,7 @@ const Lessons = () => {
     return (
         <div className='lesson' id='lesson'>
             <div className='lesson-topic'>
-                <h2>Приятного просмотра!</h2>40px
+                <h2>Приятного просмотра!</h2>
             </div>
             
 
@@ -46,7 +46,7 @@ const Lessons = () => {
                         <h3>Desing project</h3>
                     </div>
                     <div className='context-text'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam.</p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const Lessons = () => {
                         <h3>Desing project</h3>
                     </div>
                     <div className='context-text'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam.</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@ const Lessons = () => {
                         <h3>Desing project</h3>
                     </div>
                     <div className='context-text'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam, officia ut quibusdam maxime vel impedit deleniti, quas esse, non illum unde saepe. Similique, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error numquam officia ut quibusdam maxime vel impedit deleniti.</p>
                     </div>
                 </div>
             </div>
