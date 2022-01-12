@@ -1,1 +1,123 @@
-/* No CSS *//*# sourceMappingURL=CourseStyles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.courses {
+  background-color: #181818;
+  padding-bottom: 120px;
+}
+
+.course-topic h2 {
+  padding-top: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.cor {
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-video {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.course-video iframe {
+  width: 1040px;
+  height: 588px;
+}
+
+.course-context {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.context-topik {
+  margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.context-topik h2 {
+  margin: 10px;
+  font-size: 120px;
+  color: #9d9d9d;
+}
+
+.context-topik h3 {
+  margin: 15px;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #f1f1f1;
+}
+
+.contex-text {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.contex-text p {
+  font-size: 16px;
+  color: #f1f1f1;
+  font-weight: 300;
+}
+
+.context-del {
+  width: 100%;
+}
+
+.context-del img {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contex-text p {
+  font-size: 22px;
+  color: #f0f0f0;
+}
+/*# sourceMappingURL=CourseStyles.css.map */

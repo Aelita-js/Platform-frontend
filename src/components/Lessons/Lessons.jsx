@@ -138,4 +138,4 @@ const Lessons = () => {
     );
 };
 
-export default Lessons;
+export default Lessons
