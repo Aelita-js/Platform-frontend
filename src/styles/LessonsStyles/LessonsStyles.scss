@@ -24,54 +24,110 @@
 
 // =======================================================================
 
+// .les {
+//     width: 80%;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-top: 180px;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+// }
+
+// .lesson-context {
+//     width: 500px;
+// }
+
 .les {
-    width: 80%;
+    width: 78%; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 180px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.lesson-context {
-    width: 500px;
+.lesson-video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    iframe {
+        width: 1040px;
+        height: 588px;
+    }
 }
 
 .context-topic {
-    font-family: 'Ubuntu', sans-serif;
+    margin: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
     h2 {
-        font-size: 200px;
-        margin-right: 15px;
-        font-weight: 900;
+        margin: 15px;
+        font-size: 70px;
         color: #9d9d9d;
     }
     h3 {
-        font-size: 70px;
-        font-weight: normal;
-    }
-}
-
-.context-der {
-    img {
-        width: 100px;
-        padding-bottom: 36px;
+        margin: 15px;
+        font-size: 50px;
+        text-transform: uppercase;
     }
 }
 
 .context-text {
+    font-family: 'Ubuntu', sans-serif;
     p {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
-.left {
-    .lesson-context {
+.arrow-delimeter {
+    width: 100%;
+    margin: 80px 0;
+    img {
+        width: 180px;
+        display: block;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
     }
 }
+
+// .context-topic {
+//     font-family: 'Ubuntu', sans-serif;
+//     display: flex;
+//     align-items: center;
+//     h2 {
+//         font-size: 200px;
+//         margin-right: 15px;
+//         color: #9d9d9d;
+//     }
+//     h3 {
+//         font-size: 70px;
+//         font-weight: normal;
+//     }
+// }
+
+// .context-der {
+//     img {
+//         width: 100px;
+//         padding-bottom: 36px;
+//     }
+// }
+
+// .context-text {
+//     p {
+//         font-size: 22px;
+//     }
+// }
+
+// .left {
+//     .lesson-context {
+//         margin-left: auto;
+//         margin-right: 0;
+//     }
+// }
 
 .logout-button {
     width: 100%;

@@ -49,6 +49,7 @@ const Routes = () => {
         //     </BrowserRouter>
         // </AuthContextProvider>
 
+
         <AuthContextProvider>
             <BrowserRouter>
                 <Switch>
@@ -58,7 +59,7 @@ const Routes = () => {
                     <Route exact path="/confirm" component={ConfirmPage} />
                     <Route exact path="/course" component={Course} />
                     <Route exact path="/" component={Main} />
-                    <Redirect to={"/"} />
+                    <Redirect to={"/"} />                    
                 </Switch>
             </BrowserRouter>
         </AuthContextProvider>
