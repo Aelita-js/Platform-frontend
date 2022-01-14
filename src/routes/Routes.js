@@ -10,7 +10,14 @@ import Main from '../pages/Main';
 import { RequireAuth } from '../hoc/RequireAuth';
 
 const Routes = () => {
+    // const PrivRoute = (isAuth, children) => {
+    //     return isAuth ? children : <Redirect to="auth"/>
+    // }
 
+    const PrivRoute = (children) => {
+        const isToken = localStorage.getItem('jwt-access');
+        return isToken ? children : <Redirect to="auth"/>
+    }
 
 
     return (
@@ -37,14 +44,11 @@ const Routes = () => {
         //     <BrowserRouter>
         //             <Route exact path="/home" component={Main} />
         //         <Switch>
-        //             <Route exact path="/" render={() => (
-        //                 CheckRoutes === false ? (
-        //                     <Redirect to="/" />
-        //                 ) : (
-        //                     <Main />
-        //                 )
-        //                 )}/>
-
+        //             <Route exact path="/course" component={
+        //                 <PrivRoute>
+        //                     <Course />
+        //                 </PrivRoute>
+        //             }/>
         //         </Switch>
         //     </BrowserRouter>
         // </AuthContextProvider>
