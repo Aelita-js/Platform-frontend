@@ -19,7 +19,7 @@ const Lessons = () => {
 
             <div className='les' id='1'>
                 <div className='lesson-video'>
-                    <iframe src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/5h8Fxwnshyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='lesson-context'>
                     <div className='context-topic'>
@@ -40,7 +40,7 @@ const Lessons = () => {
 
             <div className='les' id='2'>
                 <div className='lesson-video'>
-                    <iframe src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/5h8Fxwnshyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='lesson-context'>
                     <div className='context-topic'>
@@ -61,7 +61,7 @@ const Lessons = () => {
 
             <div className='les' id='3'>
                 <div className='lesson-video'>
-                    <iframe src="https://www.youtube.com/embed/YlH2oAWCyEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/5h8Fxwnshyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className='lesson-context'>
                     <div className='context-topic'>
