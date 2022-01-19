@@ -5,11 +5,11 @@ import { authContext } from '../../contexts/AuthContextProvider';
 import '../../styles/LessonsStyles/LessonsStyles.css';
 
 const Lessons = () => {
-    // const { logoutUser } = useContext(authContext);
+    const { logoutUser } = useContext(authContext);
 
-    // const handleClick = () => {
-    //     logoutUser()
-    // }
+    const handleClick = () => {
+        logoutUser()
+    }
 
     return (
         <div className='lesson' id='lesson'>
@@ -75,7 +75,7 @@ const Lessons = () => {
             </div>
 
             <div className='logout-button'>
-                <button>ВЫЙТИ ИЗ СИСТЕМЫ</button>
+                <button onClick={handleClick}>ВЫЙТИ ИЗ СИСТЕМЫ</button>
             </div>
         </div>
     );

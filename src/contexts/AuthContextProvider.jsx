@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useReducer } from 'react';
 import { useState } from 'react/cjs/react.development';
 import { AUTH_API } from "../helpers/Constants";
-
+import {useHistory} from 'react-router-dom'
 export const authContext = React.createContext()
 
 const INIT_STATE = {}
@@ -95,10 +95,11 @@ const AuthContextProvider = ({ children }) => {
 
      const logoutUser = async (token, history) => {
         try {
-            await axios.post(`${AUTH_API}/logout`);
-            localStorage.clear('jwt-refresh', token);
-            setAuth(false);
-            history.push('/');
+            window.location.reload();
+            // await axios.post(`${AUTH_API}/logout`);
+            localStorage.removeItem('jwt-access');
+            // setAuth(false);
+            // history.push('/');
         } catch (e) {
             console.log(e);
         }
@@ -164,7 +165,8 @@ const AuthContextProvider = ({ children }) => {
             // getUserData,
             loginUser,
             registerUser,
-            checkLogin
+            checkLogin,
+            logoutUser
         }}>
             {children}
         </authContext.Provider>
