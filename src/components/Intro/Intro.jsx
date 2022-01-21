@@ -4,10 +4,17 @@ import mainPhoto from '../../assets/main-photo.png';
 import delimeter from '../../assets/delimiter.png';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-scroll';
+import burgerMenu from '../../assets/menu-icon.png';
 import '../../styles/IntroStyles/IntroStyles.css'; 
 
 const Intro = () => {
     const history = useHistory();
+
+    function menuCLick () {
+        return (
+            <div></div>
+        )
+    }
 
     return (
 
@@ -15,14 +22,16 @@ const Intro = () => {
             <div className='intro-header'>
                 <div className='intro-menu'>
                     <ul>
-                        <li onClick={() => history.push("/")}>Главная</li>
+                        <li onClick={() => history.push("/home")}>Главная</li>
                         <li><Link to="about" smooth={true} duration={700} >О продукции</Link></li>
                         <li><Link to="lesson" smooth={true} duration={1000} >Смотреть курс</Link></li>
                         <li onClick={() => history.push("/course")}>Курс для продвинутых</li>
                     </ul>
+                    {/* <div className='intro-burger'>
+                        <img onClick={menuCLick} src={burgerMenu} alt="<->" />
+                    </div> */}
                 </div>
             </div>
-
 
             <div className='intro-info'>
                 <div className='info-team'>

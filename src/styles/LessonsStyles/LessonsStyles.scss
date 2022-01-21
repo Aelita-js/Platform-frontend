@@ -22,21 +22,6 @@
     }
 }
 
-// =======================================================================
-
-// .les {
-//     width: 80%;
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-top: 180px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-// }
-
-// .lesson-context {
-//     width: 500px;
-// }
-
 .les {
     width: 78%; 
     margin-left: auto;
@@ -102,41 +87,6 @@
     }
 }
 
-// .context-topic {
-//     font-family: 'Ubuntu', sans-serif;
-//     display: flex;
-//     align-items: center;
-//     h2 {
-//         font-size: 200px;
-//         margin-right: 15px;
-//         color: #9d9d9d;
-//     }
-//     h3 {
-//         font-size: 70px;
-//         font-weight: normal;
-//     }
-// }
-
-// .context-der {
-//     img {
-//         width: 100px;
-//         padding-bottom: 36px;
-//     }
-// }
-
-// .context-text {
-//     p {
-//         font-size: 22px;
-//     }
-// }
-
-// .left {
-//     .lesson-context {
-//         margin-left: auto;
-//         margin-right: 0;
-//     }
-// }
-
 .logout-button {
     width: 100%;
     margin-top: 100px;
@@ -155,4 +105,160 @@ button {
     button:hover {
     opacity: 80%;
     transition: .2s;
+}
+
+// ! ==============================================================
+
+@media screen and (max-width: 1400px) {
+    .context-text {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .lesson-video {
+        iframe {
+            height: 480px;
+        }
+    }
+    .context-topic {
+        margin: 10px;
+    }
+    .context-text {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .les {
+        margin-top: 100px;
+    }
+    .lesson-video {
+        iframe {
+            height: 420px;
+        }
+    }
+    .lesson-context {
+        display: flex;
+        flex-direction: column;
+    }
+    .context-topic {
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 80px;
+        }
+    }
+    .context-text {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .lesson-topic {
+        h2 {
+            font-size: 50px;
+        }
+    }
+    .les {
+        margin-top: 60px;
+    }
+    .lesson-video {
+        iframe {
+            height: 355px;
+        }
+    }
+    .context-topic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            font-size: 70px;
+        }
+        h3 {
+            font-size: 42px;
+        }
+    }
+    .context-text {
+        p {
+            font-size: 16px;
+        }
+    }
+    .arrow-delimeter {
+         img {
+             width: 120px;
+         }
+    }
+}
+
+@media screen  and (max-width: 700px) {
+    .les {
+        margin-bottom: 35px;
+    }
+    .lesson-video {
+        iframe {
+            height: 310px;
+        }
+    }
+    .context-topic {
+        h2 {
+            font-size: 60px;
+        }
+        h3 {
+            font-size: 38px;
+        }
+    }
+    .context-text {
+        p {
+            font-size: 14px;
+        }
+    }
+    .arrow-delimeter {
+        img {
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .les {
+        margin-top: 40px;
+    }
+    .lesson-topic {
+        h2 {
+            font-size: 42px;
+            padding-top: 48px;
+        }
+    }
+    .lesson-video {
+        iframe {
+            height: 290px;
+        }
+    }
+
+    .context-topic {
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+    .context-text {
+        p {
+            font-size: 13px;
+        }
+    }
+    .arrow-delimeter {
+        img {
+            width: 80px;
+        }
+    }
 }
