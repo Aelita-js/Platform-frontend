@@ -43,10 +43,12 @@ const Routes = () => {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={Auth} />
+                    <Route exact path="/admin" component={SingUp} />
+                    <Route exact path="/confirm" component={ConfirmPage} />
                         <>
+                      {/* <PrivateRoute  exact path="/confirm" component={ConfirmPage} /> */}
                       <PrivateRoute  exact path="/home" component={Main} />
-                      <PrivateRoute  exact path="/admin" component={SingUp} />
-                      <PrivateRoute  exact path="/confirm" component={ConfirmPage} />
+                      {/* <PrivateRoute  exact path="/admin" component={SingUp} /> */}
                       <PrivateRoute  exact path="/course" component={Course} />
                       <Route render={() => <Redirect to={{pathname: "/home"}} /> } />
                         </>
